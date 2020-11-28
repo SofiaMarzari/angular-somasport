@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { UsuarioBtnComponent } from './usuario-btn/usuario-btn.component';
 import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
 import { GaleriaImagenesComponent } from './galeria-imagenes/galeria-imagenes.component';
+import { GaleriaInfoComponent } from './galeria-info/galeria-info.component';
+import { ListLomaselegidoComponent } from './list-lomaselegido/list-lomaselegido.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsuarioBtnComponent,
     CarritoComprasComponent,
-    GaleriaImagenesComponent
+    GaleriaImagenesComponent,
+    GaleriaInfoComponent,
+    ListLomaselegidoComponent
   ],
   imports: [
     BrowserModule
