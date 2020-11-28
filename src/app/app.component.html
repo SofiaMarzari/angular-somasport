@@ -1,3 +1,46 @@
-<app-usuario-btn></app-usuario-btn>
-<app-galeria-imagenes></app-galeria-imagenes>
-<app-carrito-compras></app-carrito-compras>
+<header>
+    <h1>SUPER Kloked</h1>
+</header>
+<nav>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+</nav>
+<section id="section-carrito">
+    <app-carrito-compras></app-carrito-compras>
+</section>
+<section id="section-btnUsr">
+    <app-usuario-btn></app-usuario-btn>
+</section>
+<div class="container">
+    <section id="section-galeria">
+        <app-galeria-imagenes></app-galeria-imagenes>
+    </section>
+    <section id="section-info">
+        <app-galeria-info></app-galeria-info>
+    </section>
+    <section id="section-masElegido">
+        <app-list-lomaselegido></app-list-lomaselegido>
+    </section>
+    <article id="article-publicidad">
+        <app-colum-publicidad></app-colum-publicidad>
+    </article>
+</div>

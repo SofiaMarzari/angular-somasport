@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-lomaselegido.component.css']
 })
 export class ListLomaselegidoComponent implements OnInit {
-
+  name = "Lo mas elegido";
   constructor() { }
 
   ngOnInit(): void {

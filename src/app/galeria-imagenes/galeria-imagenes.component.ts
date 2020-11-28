@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./galeria-imagenes.component.css']
 })
 export class GaleriaImagenesComponent implements OnInit {
-
+  name = "Galeria";
   constructor() { }
 
   ngOnInit() {

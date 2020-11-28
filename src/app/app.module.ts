@@ -7,6 +7,7 @@ import { CarritoComprasComponent } from './carrito-compras/carrito-compras.compo
 import { GaleriaImagenesComponent } from './galeria-imagenes/galeria-imagenes.component';
 import { GaleriaInfoComponent } from './galeria-info/galeria-info.component';
 import { ListLomaselegidoComponent } from './list-lomaselegido/list-lomaselegido.component';
+import { ColumPublicidadComponent } from './colum-publicidad/colum-publicidad.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ListLomaselegidoComponent } from './list-lomaselegido/list-lomaselegido
     CarritoComprasComponent,
     GaleriaImagenesComponent,
     GaleriaInfoComponent,
-    ListLomaselegidoComponent
+    ListLomaselegidoComponent,
+    ColumPublicidadComponent
   ],
   imports: [
     BrowserModule

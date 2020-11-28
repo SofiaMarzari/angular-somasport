@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./galeria-info.component.css']
 })
 export class GaleriaInfoComponent implements OnInit {
-
+  name = "Informacion";
   constructor() { }
 
   ngOnInit(): void {
