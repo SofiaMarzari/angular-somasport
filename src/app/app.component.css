@@ -1,17 +1,46 @@
+header{
+    background-color: rgb(2, 2, 3);
+    width: 40%;
+    height: 100px;
+    margin-left: 60%;
+    margin-top: 1%;
+    border-radius: 10%;
+    padding-top: 1.5%;
+    grid-area: header;
+}
 header > h1{
-    margin-left: 100px;
-    color: goldenrod;
+    color: rgb(151, 186, 122);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 24%;
+}
+#is-nombrePag{
+    color: rgb(142, 224, 74);
+    font-style: oblique;
+}
+nav{
+    background-color: rgb(26, 44, 2);
+}
+nav > ul > li > a{
+    color: white;
 }
 .container{
-    width: 90%;
-    margin-left: 10%;
-    background-color: rgba(192, 192, 192, 0.8);
+    background-color: rgba(192, 192, 192, 0.3);
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-areas: "galeria galeria"
-                          "info info"
-                          "masElegido publicidad";
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "header header btnUsr"
+                          "header header carrito"
+                          "galeria galeria galeria"
+                          "info info info"
+                          "masElegido masElegido publicidad";
+    max-width: 95%;
+}
+#section-carrito{
+    grid-area: carrito;
+    margin-left: 80%;
+}
+#section-btnUsr{
+    grid-area: btnUsr;
+    margin-left: 80%;
 }
 #section-galeria{
     grid-area: galeria;
@@ -24,4 +53,16 @@ header > h1{
 }
 #article-publicidad{
     grid-area: publicidad;
+    margin-left: 45%;
+}
+section, article{
+    margin: 5px;
+}
+footer{
+    background-color: rgb(26, 44, 2);
+    display: flex;
+    justify-content: center;
+}
+footer > h6{
+    color: white;
 }

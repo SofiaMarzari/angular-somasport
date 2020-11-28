@@ -1,6 +1,6 @@
-div{
+.containerCarrito{
     border-style: solid;
-    border: springgreen;
+    border-color: springgreen;
     width: 100px;
     height: 100px;
 }

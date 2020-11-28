@@ -1,6 +1,6 @@
 div{
     border-style: solid;
-    border: orangered;
-    width: 200px;
-    height: 500px;
+    border-color: orangered;
+    width: 300px;
+    height: 700px;
 }

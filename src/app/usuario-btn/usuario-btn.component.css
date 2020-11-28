@@ -1,6 +1,6 @@
-div{
+.containerBtnUsr{
     border-style: solid;
-    border: purple;
+    border-color: purple;
     width: 100px;
     height: 100px;
 }

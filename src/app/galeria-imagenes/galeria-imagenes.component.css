@@ -1,6 +1,6 @@
 div{
     border-style: solid;
-    border: teal;
+    border-color: teal;
     width: 100%;
     height: 400px;
 }
