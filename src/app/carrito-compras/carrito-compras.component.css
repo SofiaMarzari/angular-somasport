@@ -1,6 +1,7 @@
 .containerCarrito{
-    border-style: solid;
-    border-color: springgreen;
     width: 100px;
     height: 100px;
+}
+.containerCarrito  svg{
+    color: white;
 }

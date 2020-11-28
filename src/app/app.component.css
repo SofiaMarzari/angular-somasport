@@ -1,17 +1,18 @@
 header{
     background-color: rgb(2, 2, 3);
-    width: 40%;
-    height: 100px;
+    width: 45%;
+    height: 110px;
     margin-left: 60%;
     margin-top: 1%;
-    border-radius: 10%;
+    border-radius: 0px 60px 0px 60px;
     padding-top: 1.5%;
+    padding-bottom: 1%;
     grid-area: header;
 }
 header > h1{
     color: rgb(151, 186, 122);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 24%;
+    margin-left: 30%;
 }
 #is-nombrePag{
     color: rgb(142, 224, 74);
@@ -27,7 +28,7 @@ nav > ul > li > a{
     background-color: rgba(192, 192, 192, 0.3);
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-areas: "header header btnUsr"
+    grid-template-areas: "header header carrito"
                           "header header carrito"
                           "galeria galeria galeria"
                           "info info info"
@@ -36,7 +37,7 @@ nav > ul > li > a{
 }
 #section-carrito{
     grid-area: carrito;
-    margin-left: 80%;
+    margin-left: 90%;
 }
 #section-btnUsr{
     grid-area: btnUsr;

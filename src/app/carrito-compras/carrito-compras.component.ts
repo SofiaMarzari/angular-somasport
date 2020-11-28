@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carrito-compras.component.css']
 })
 export class CarritoComprasComponent implements OnInit {
-  name = "Carrito";
+  imgCarrito = 'assets/img/carrito.png';
   constructor() { }
 
   ngOnInit(): void {
