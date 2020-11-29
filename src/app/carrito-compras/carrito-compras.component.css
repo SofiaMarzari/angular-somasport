@@ -2,6 +2,6 @@
     width: 100px;
     height: 100px;
 }
-.containerCarrito  svg{
+.containerCarrito > a{
     color: white;
 }

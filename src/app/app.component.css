@@ -2,7 +2,7 @@ header{
     background-color: rgb(2, 2, 3);
     width: 45%;
     height: 110px;
-    margin-left: 60%;
+    margin-left: 67%;
     margin-top: 1%;
     border-radius: 0px 60px 0px 60px;
     padding-top: 1.5%;
@@ -38,11 +38,12 @@ nav > ul > li > a{
 #section-carrito{
     grid-area: carrito;
     margin-left: 90%;
+    margin-top: 10%;
 }
 #section-btnUsr{
     grid-area: btnUsr;
-    margin-left: 80%;
 }
+
 #section-galeria{
     grid-area: galeria;
 }
