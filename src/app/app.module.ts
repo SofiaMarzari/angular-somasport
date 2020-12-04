@@ -11,6 +11,7 @@ import { ColumPublicidadComponent } from './colum-publicidad/colum-publicidad.co
 import { HomeInicioComponent } from './home-inicio/home-inicio.component';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './routing.module';
+import { FiltroProductosComponent } from './filtro-productos/filtro-productos.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AppRoutingModule } from './routing.module';
     GaleriaInfoComponent,
     ListLomaselegidoComponent,
     ColumPublicidadComponent,
-    HomeInicioComponent
+    HomeInicioComponent,
+    FiltroProductosComponent
   ],
   imports: [
     BrowserModule,
