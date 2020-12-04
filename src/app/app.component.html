@@ -6,13 +6,8 @@
           <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
         </svg></a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Zapatillas</a>
-          <a class="dropdown-item" href="#">Ropa</a>
-          <a class="dropdown-item" href="#">Accesorios</a>
-        </div>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/productos']">Productos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/ofertas']">Ofertas</a>

@@ -12,6 +12,7 @@ import { HomeInicioComponent } from './home-inicio/home-inicio.component';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './routing.module';
 import { FiltroProductosComponent } from './filtro-productos/filtro-productos.component';
+import { ListadoProductosComponent } from './listado-productos/listado-productos.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FiltroProductosComponent } from './filtro-productos/filtro-productos.co
     ListLomaselegidoComponent,
     ColumPublicidadComponent,
     HomeInicioComponent,
-    FiltroProductosComponent
+    FiltroProductosComponent,
+    ListadoProductosComponent
   ],
   imports: [
     BrowserModule,
