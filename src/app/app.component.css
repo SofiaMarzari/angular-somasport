@@ -25,12 +25,10 @@ nav > ul > li > a{
     color: white;
 }
 .container{
+    background-color: rgba(192, 192, 192, 0.3);
     max-width: 95%;
 }
-#section-carrito{
-    margin-left: 90%;
-    margin-top: 10%;
-}
+
 footer{
     background-color: rgb(26, 44, 2);
     display: flex;

@@ -1,5 +1,4 @@
 .container-inicio{
-    background-color: rgba(192, 192, 192, 0.3);
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-areas: "header header carrito"
