@@ -8,6 +8,7 @@ import { GaleriaImagenesComponent } from './galeria-imagenes/galeria-imagenes.co
 import { GaleriaInfoComponent } from './galeria-info/galeria-info.component';
 import { ListLomaselegidoComponent } from './list-lomaselegido/list-lomaselegido.component';
 import { ColumPublicidadComponent } from './colum-publicidad/colum-publicidad.component';
+import { HomeInicioComponent } from './home-inicio/home-inicio.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ColumPublicidadComponent } from './colum-publicidad/colum-publicidad.co
     GaleriaImagenesComponent,
     GaleriaInfoComponent,
     ListLomaselegidoComponent,
-    ColumPublicidadComponent
+    ColumPublicidadComponent,
+    HomeInicioComponent
   ],
   imports: [
     BrowserModule
