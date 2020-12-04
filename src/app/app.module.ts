@@ -9,6 +9,8 @@ import { GaleriaInfoComponent } from './galeria-info/galeria-info.component';
 import { ListLomaselegidoComponent } from './list-lomaselegido/list-lomaselegido.component';
 import { ColumPublicidadComponent } from './colum-publicidad/colum-publicidad.component';
 import { HomeInicioComponent } from './home-inicio/home-inicio.component';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HomeInicioComponent } from './home-inicio/home-inicio.component';
     HomeInicioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

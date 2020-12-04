@@ -1,0 +1,26 @@
+.container-inicio{
+    background-color: rgba(192, 192, 192, 0.3);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "header header carrito"
+                          "header header carrito"
+                          "galeria galeria galeria"
+                          "info info info"
+                          "masElegido masElegido publicidad";
+}
+#section-galeria{
+    grid-area: galeria;
+}
+#section-info{
+    grid-area: info;
+}
+#section-masElegido{
+    grid-area: masElegido;
+}
+#article-publicidad{
+    grid-area: publicidad;
+    margin-left: 45%;
+}
+section, article{
+    margin: 5px;
+}

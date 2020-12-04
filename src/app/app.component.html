@@ -22,28 +22,19 @@
       </li>
     </ul>
 </nav>
+<header>
+  <h1><span id="is-nombrePag">SUPER</span>  Kloked</h1>
+</header>
+<section id="section-carrito">
+  <app-carrito-compras></app-carrito-compras>
+</section>
 <section id="section-btnUsr">
   <app-usuario-btn></app-usuario-btn>
 </section>
+
+
 <div class="container">
-    <header>
-        <h1><span id="is-nombrePag">SUPER</span>  Kloked</h1>
-    </header>
-    <section id="section-carrito">
-        <app-carrito-compras></app-carrito-compras>
-    </section>
-    <section id="section-galeria">
-        <app-galeria-imagenes></app-galeria-imagenes>
-    </section>
-    <section id="section-info">
-        <app-galeria-info></app-galeria-info>
-    </section>
-    <section id="section-masElegido">
-        <app-list-lomaselegido></app-list-lomaselegido>
-    </section>
-    <article id="article-publicidad">
-        <app-colum-publicidad></app-colum-publicidad>
-    </article>
+    <router-outlet></router-outlet> 
 </div>
 <footer>
   <h6>Footer</h6>
