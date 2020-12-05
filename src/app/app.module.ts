@@ -13,6 +13,9 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './routing.module';
 import { FiltroProductosComponent } from './filtro-productos/filtro-productos.component';
 import { ListadoProductosComponent } from './listado-productos/listado-productos.component';
+import { ProductosOfertasComponent } from './productos-ofertas/productos-ofertas.component';
+import { RedesContactoComponent } from './redes-contacto/redes-contacto.component';
+import { LoginSesionComponent } from './login-sesion/login-sesion.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { ListadoProductosComponent } from './listado-productos/listado-productos
     ColumPublicidadComponent,
     HomeInicioComponent,
     FiltroProductosComponent,
-    ListadoProductosComponent
+    ListadoProductosComponent,
+    ProductosOfertasComponent,
+    RedesContactoComponent,
+    LoginSesionComponent
   ],
   imports: [
     BrowserModule,
