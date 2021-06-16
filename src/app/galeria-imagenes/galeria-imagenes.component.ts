@@ -11,6 +11,7 @@ export class GaleriaImagenesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

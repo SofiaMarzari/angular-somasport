@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { Observable } from 'rxjs';
+import { ServiceComprasService } from '../service-compras.service';
+import { Producto } from './Producto';
 
 @Component({
   selector: 'app-carrito-compras',
@@ -6,8 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carrito-compras.component.css']
 })
 export class CarritoComprasComponent implements OnInit {
-  imgCarrito = 'assets/img/carrito.png';
-  constructor() { }
+  listaCarrito: Producto[] = [];
+  constructor(private servCompras : ServiceComprasService)/*lo inyectamos */ {
+    servCompras._lista.subscribe((observable) =>this.listaCarrito = observable);
+   
+    console.log(this.listaCarrito);
+  }
 
   ngOnInit(): void {
   }

@@ -1,0 +1,10 @@
+.containerCarrito{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 15%;
+    position: fixed;
+}
+.containerCarrito > a{
+    color: white;
+}

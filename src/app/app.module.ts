@@ -16,6 +16,11 @@ import { ListadoProductosComponent } from './listado-productos/listado-productos
 import { ProductosOfertasComponent } from './productos-ofertas/productos-ofertas.component';
 import { RedesContactoComponent } from './redes-contacto/redes-contacto.component';
 import { LoginSesionComponent } from './login-sesion/login-sesion.component';
+import { NavProductosComponent } from './nav-productos/nav-productos.component';
+import { ProductoPreviewComponent } from './producto-preview/producto-preview.component';
+import { ProductoParticularComponent } from './producto-particular/producto-particular.component';
+import { InputCantidadProductoComponent } from './input-cantidad-producto/input-cantidad-producto.component';
+import { CarritoBtnComponent } from './carrito-btn/carrito-btn.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,12 @@ import { LoginSesionComponent } from './login-sesion/login-sesion.component';
     ListadoProductosComponent,
     ProductosOfertasComponent,
     RedesContactoComponent,
-    LoginSesionComponent
+    LoginSesionComponent,
+    NavProductosComponent,
+    ProductoPreviewComponent,
+    ProductoParticularComponent,
+    InputCantidadProductoComponent,
+    CarritoBtnComponent
   ],
   imports: [
     BrowserModule,

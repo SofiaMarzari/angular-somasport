@@ -1,0 +1,73 @@
+#section-prodPart{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+                        "img descripcion descripcion"
+                        "img precio talle"
+                        "img precio sexo"
+                        "img cantidad col"
+                        "img cantidad stock"
+                        "img oferta oferta"
+                        "comprar comprar comprar";
+    background-color:rgb(240, 255, 255, 0.5);
+    width: 70%;
+    height: 90%;
+    margin-left: 15%;
+    padding-bottom: 2%; 
+    padding-top: 2%;       
+}
+#section-prodPart > p{
+    font-size: 150%;
+    color: rgb(22, 46, 3);
+}
+#section-prodPart > #p-descripcion{
+    font-size: 200%;
+    color: rgb(22, 46, 3);
+    grid-area: descripcion;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+img{
+    grid-area: img;
+    margin-left: 2%;
+}
+#div-cantidad{
+    grid-area: cantidad;
+    margin-left: 10%;
+}
+#p-precio{
+    grid-area: precio;
+    margin-left: 10%;
+}
+#p-talle{
+    grid-area: talle;
+    margin-right: 10%;
+}
+#p-sexo{
+    grid-area: sexo;
+    margin-right: 10%;
+}
+#p-color{
+    grid-area: col;
+    margin-right: 10%;
+}
+#p-oferta{
+    grid-area: oferta;
+}
+
+#p-stock{
+    grid-area: stock;
+    margin-right: 10%;
+}
+#btnComprar{
+    grid-area: comprar;
+    width: 20%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 2% 0 2% 2%;
+    border-style: none;
+    background-color: yellowgreen;
+    color: rgb(22, 46, 3);
+    margin-left: 40%;
+    font-size: 130%;
+}

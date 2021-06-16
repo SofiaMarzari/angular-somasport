@@ -1,36 +1,37 @@
 <nav>
-  <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/home']"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/home']"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
           <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
         </svg></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/productos']">Productos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/ofertas']">Ofertas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
-      </li>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/productos']">{{productos}}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/ofertas']">{{ofertas}}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contacto']">{{contactos}}</a>
+        </li>
     </ul>
 </nav>
 <header>
-  <h1><span id="is-nombrePag">SUPER</span>  Kloked</h1>
+    <h1><span id="is-nombrePag">SOMA</span> Sports</h1>
 </header>
 <section id="section-carrito">
-  <app-carrito-compras></app-carrito-compras>
+    <app-carrito-compras></app-carrito-compras>
 </section>
 <section id="section-btnUsr">
-  <app-usuario-btn></app-usuario-btn>
+    <app-usuario-btn></app-usuario-btn>
 </section>
-
-
+<section>
+    <app-carrito-btn></app-carrito-btn>
+</section>
 <div class="container">
-    <router-outlet></router-outlet> 
+    <router-outlet></router-outlet>
 </div>
 <footer>
-  <h6>Footer</h6>
+    <h6>Footer</h6>
 </footer>

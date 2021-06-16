@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ɵCodegenComponentFactoryResolver } from '@angular/core';
 
 @Component({
   selector: 'app-galeria-info',
@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./galeria-info.component.css']
 })
 export class GaleriaInfoComponent implements OnInit {
-  name = "Informacion";
+
   constructor() { }
 
   ngOnInit(): void {
+   
   }
+
+  onmouseover(){
+
+  }
+
+// (mouseenter)="entra()"
+// (mouseleave)="sale()"
+
 
 }

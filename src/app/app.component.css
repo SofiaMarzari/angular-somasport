@@ -1,39 +1,48 @@
-header{
-    background-color: rgb(2, 2, 3);
+header {
+    background-color: white;
     width: 45%;
     height: 110px;
     margin-left: 30%;
     margin-top: 1%;
     margin-bottom: 1%;
     border-radius: 0px 60px 0px 60px;
-    padding-top: 1.5%;
+    padding-top: 1%;
     padding-bottom: 1%;
 }
-header > h1{
+
+header>h1 {
     color: rgb(151, 186, 122);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 30%;
-}
-#is-nombrePag{
-    color: rgb(142, 224, 74);
-    font-style: oblique;
-}
-nav{
-    background-color: rgb(26, 44, 2);
-}
-nav > ul > li > a{
-    color: white;
-}
-.container{
-    background-color: rgba(192, 192, 192, 0.3);
-    max-width: 95%;
+    margin-left: 15%;
+    font-size: 60px;
 }
 
-footer{
+#is-nombrePag {
+    font-size: 70px;
+    text-shadow: 2px 4px 10px black;
+    color: rgb(22, 46, 3);
+    font-style: oblique;
+}
+
+nav {
+    background-color: rgb(26, 44, 2);
+}
+
+nav>ul>li>a {
+    color: white;
+}
+
+.container {
+    background-color: rgba(192, 192, 192, 0.3);
+    max-width: 100%;
+}
+
+footer {
     background-color: rgb(26, 44, 2);
     display: flex;
     justify-content: center;
 }
-footer > h6{
+
+footer>h6 {
     color: white;
 }

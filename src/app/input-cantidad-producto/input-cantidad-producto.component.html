@@ -1,0 +1,8 @@
+<section>
+    <label> Cantidad:
+        {{cantidad}}
+        <button (click)="aumentarCantidad()">+</button>
+        <input type="text" name="cantidad" [(ngModel)]="cantidad" (keyup.enter)="dataInput($event.target.value)">
+        <button (click)="disminuirCantidad()">-</button>
+    </label>
+</section>

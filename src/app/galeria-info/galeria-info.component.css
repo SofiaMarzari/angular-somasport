@@ -1,6 +1,36 @@
-div{
-    border-style: solid;
-    border-color: tomato;
+section {
     width: 100%;
-    height: 200px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section>div {
+    width: 100%;
+    height: 100%;
+}
+
+section>div>p {
+    color: white;
+    width: 7%;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+svg {
+    width: 100%;
+    height: 90%;
+    margin-top: 1%;
+    color: rgb(151, 186, 122);
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: inline;
 }

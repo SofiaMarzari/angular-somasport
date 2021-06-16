@@ -1,1 +1,4 @@
-<p>productos-ofertas works!</p>
+<div id="div-productos-ofertas">
+    <app-producto-preview class="app-producto-preview" *ngFor="let p of productos" [ngClass]="{'vacioOcultar': !p.oferta}" [producto]="p">
+    </app-producto-preview>
+</div>

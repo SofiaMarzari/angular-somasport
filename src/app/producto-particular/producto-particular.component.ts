@@ -1,12 +1,17 @@
-import { Component, OnInit, ɵNOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { ServiceComprasService } from '../service-compras.service';
 import { Producto } from './Producto';
+/*import { Location } from '@angular/common'; */
 
 @Component({
-  selector: 'app-listado-productos',
-  templateUrl: './listado-productos.component.html',
-  styleUrls: ['./listado-productos.component.css']
+  selector: 'app-producto-particular',
+  templateUrl: './producto-particular.component.html',
+  styleUrls: ['./producto-particular.component.css']
 })
-export class ListadoProductosComponent implements OnInit {
+export class ProductoParticularComponent implements OnInit {
+
+  productoParticular : Producto;
   productos: Producto [] = [
     {
       id: 1,
@@ -63,7 +68,7 @@ export class ListadoProductosComponent implements OnInit {
       color: 'rojo',
       talle: 1,
       precio: 3700,
-      stock: 8,
+      stock: 0,
       descripcion: 'Remera Luz',
       oferta: true,
       cantidad: 0
@@ -82,8 +87,25 @@ export class ListadoProductosComponent implements OnInit {
     },
   ]
 
-  
-  constructor(){}
 
-  ngOnInit(){}
+  constructor(
+    private route: ActivatedRoute,
+    /*private location: Location */
+    private servCompras : ServiceComprasService,
+  ) {}
+
+  ngOnInit(): void {
+    /*this.activatedRoute.paramMap.subscribe((parametros: ParamMap) => {
+      this.idParam = parametros.get("id");
+    })*/
+    const idParam = Number(this.route.snapshot.paramMap.get('ID'));
+    this.productoParticular = this.productos[idParam-1];
+  }
+
+  comprarProducto(producto : Producto) : void{
+    //invoco funcion del service 
+    this.servCompras.agregarProducto(producto);
+    console.log(this.servCompras._lista);
+  }
+
 }
