@@ -103,9 +103,13 @@ export class ProductoParticularComponent implements OnInit {
   }
 
   comprarProducto(producto : Producto) : void{
-    //invoco funcion del service 
-    this.servCompras.agregarProducto(producto);
-    console.log(this.servCompras._lista);
+
+    if(producto.cantidad > 0){
+        //invoco funcion del service 
+        this.servCompras.agregarProducto(producto);
+        console.log(this.servCompras._lista);
+    }
+    
   }
 
 }

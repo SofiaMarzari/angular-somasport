@@ -9,11 +9,11 @@ import { Producto } from './Producto';
   styleUrls: ['./carrito-compras.component.css']
 })
 export class CarritoComprasComponent implements OnInit {
-  listaCarrito: Producto[] = [];
-  constructor(private servCompras : ServiceComprasService)/*lo inyectamos */ {
-    servCompras._lista.subscribe((observable) =>this.listaCarrito = observable);
-   
-    console.log(this.listaCarrito);
+  //listaCarrito: Producto[] = [];
+  listaCarrito$ : Observable<Producto[]>;
+  constructor(private servCompras : ServiceComprasService) {
+    //servCompras._lista.subscribe((observable) =>this.listaCarrito = observable);
+    this.listaCarrito$ = servCompras._lista.asObservable();
   }
 
   ngOnInit(): void {

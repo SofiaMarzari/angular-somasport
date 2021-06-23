@@ -7,7 +7,6 @@
                         "img precio sexo"
                         "img cantidad col"
                         "img cantidad stock"
-                        "img oferta oferta"
                         "comprar comprar comprar";
     background-color:rgb(240, 255, 255, 0.5);
     width: 70%;
@@ -30,6 +29,8 @@
 img{
     grid-area: img;
     margin-left: 2%;
+    width: 100%;
+    height: 100%
 }
 #div-cantidad{
     grid-area: cantidad;
@@ -51,10 +52,6 @@ img{
     grid-area: col;
     margin-right: 10%;
 }
-#p-oferta{
-    grid-area: oferta;
-}
-
 #p-stock{
     grid-area: stock;
     margin-right: 10%;

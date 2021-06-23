@@ -10,7 +10,6 @@
     <p id="p-talle"> Talle: {{productoParticular.talle}}</p>
     <p id="p-sexo"> Sexo: {{productoParticular.sexo}}</p>
     <p id="p-color"> Color: {{productoParticular.color}}</p>
-    <p id="p-oferta" *ngIf="productoParticular.oferta">¡Este producto esta en oferta tenés que aprovechar!</p>
     <p id="p-stock"> Stock: {{productoParticular.stock}}</p>
     <div id="div-cantidad">  
         <app-input-cantidad-producto *ngIf="productoParticular.stock != 0" [maximo]="productoParticular.stock" [(cantidad)]="productoParticular.cantidad"></app-input-cantidad-producto>
