@@ -1,5 +1,6 @@
 <table>
     <tr *ngFor="let producto of (listaCarrito$ |async)" >
-       <td>{{producto.cantidad}}</td> 
+        <td>{{producto.descripcion}}</td>
+        <td>{{producto.cantidad}}</td> 
     </tr>
 </table>
