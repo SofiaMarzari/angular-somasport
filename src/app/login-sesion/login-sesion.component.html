@@ -1,1 +1,40 @@
-<p>login-sesion works!</p>
+<section>
+    <svg width= "50px" height="50px" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+        <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+    </svg>
+    
+    <form action="inicioSesion" method="post">
+        <p>______________________________________________________</p>
+        <h1>Iniciar Sesion!</h1>
+        <label for="usuario">Usuario:
+            <input type="text" name="usuarioIngr">
+        </label>
+        <label for="password">Contraseña: 
+            <input type="text" name="passwordIngr">
+        </label>
+        <input type="submit" value="Ingresar">
+    </form>
+    
+    <form action="registrar" method="post">
+        <p>______________________________________________________</p>
+        <h1>Registrarse!</h1>
+        <label for="nombre">Nombre:
+            <input type="text" name="nombre">
+        </label>
+        <label for="apellido">Apellido:
+            <input type="text" name="apellido">
+        </label>
+        <label for="mail">Mail: 
+            <input type="text" name="mail">
+        </label>
+        <label for="passwordReg">Contraseña: 
+            <input type="text" name="passwordReg">
+        </label>
+        <label for="passwordRegVerificar">Repetir contraseña: 
+            <input type="text" name="passwordRegVerificar">
+        </label>
+        <input type="submit" value="Registrarse">
+    </form>
+</section>

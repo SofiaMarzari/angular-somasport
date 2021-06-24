@@ -9,12 +9,20 @@ export class ServiceComprasService {
 
   constructor() { }
 
+  item: Producto;
   private lista : Producto[] = [];
-  _lista : BehaviorSubject<Producto[]> = new BehaviorSubject(this.lista);
+  private listaSubject : BehaviorSubject<Producto[]> = new BehaviorSubject(this.lista);
+  public _lista: Observable<Producto[]> = this.listaSubject.asObservable();
 
   agregarProducto(p : Producto){
-    this.lista.push(p);
-    this._lista.next(this.lista);
-    console.log(this.lista);
+    this.item = this.lista.find((elem) => elem.descripcion == p.descripcion);
+    if(!this.item){
+      this.lista.push(p);
+      this.listaSubject.next(this.lista);
+    }else{
+      this.item.cantidad += p.cantidad;
+      this.listaSubject.next(this.lista);
+    }
+     
   }
 }

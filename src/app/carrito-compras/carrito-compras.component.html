@@ -1,6 +1,15 @@
-<table>
-    <tr *ngFor="let producto of (listaCarrito$ |async)" >
-        <td>{{producto.descripcion}}</td>
-        <td>{{producto.cantidad}}</td> 
-    </tr>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Descripcion</th>
+            <th>Cantidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let producto of listaCarrito" >
+            <td>{{producto.descripcion}}</td>
+            <td>{{producto.cantidad}}</td> 
+            <td><img class="imgProductoTd" src="{{producto.image}}" alt="producto"></td>
+        </tr>
+    </tbody> 
 </table>
