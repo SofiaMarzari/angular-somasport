@@ -8,5 +8,5 @@ export interface Producto{
     stock: number;
     descripcion: string;
     oferta: boolean;
-    cantidad: 0;
+    cantidad: number;
 }

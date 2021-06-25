@@ -4,7 +4,6 @@
     import { NavProductosComponent } from './nav-productos/nav-productos.component';
     import { LoginSesionComponent } from './login-sesion/login-sesion.component';
     import { ProductosOfertasComponent } from './productos-ofertas/productos-ofertas.component';
-    import { RedesContactoComponent } from './redes-contacto/redes-contacto.component';
     import { ProductoParticularComponent} from './producto-particular/producto-particular.component';
 import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
     
@@ -14,7 +13,6 @@ import { CarritoComprasComponent } from './carrito-compras/carrito-compras.compo
         { path: 'home', component: HomeInicioComponent },
         { path: 'productos', component: NavProductosComponent },
         { path: 'ofertas', component: ProductosOfertasComponent },
-        { path: 'contacto', component: RedesContactoComponent },
         { path: 'login', component: LoginSesionComponent },
         { path: 'verProducto/:ID', component: ProductoParticularComponent },
         { path: 'carrito', component: CarritoComprasComponent }

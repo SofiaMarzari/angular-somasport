@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { UsuarioBtnComponent } from './usuario-btn/usuario-btn.component';
 import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
@@ -14,7 +14,7 @@ import { AppRoutingModule } from './routing.module';
 import { FiltroProductosComponent } from './filtro-productos/filtro-productos.component';
 import { ListadoProductosComponent } from './listado-productos/listado-productos.component';
 import { ProductosOfertasComponent } from './productos-ofertas/productos-ofertas.component';
-import { RedesContactoComponent } from './redes-contacto/redes-contacto.component';
+
 import { LoginSesionComponent } from './login-sesion/login-sesion.component';
 import { NavProductosComponent } from './nav-productos/nav-productos.component';
 import { ProductoPreviewComponent } from './producto-preview/producto-preview.component';
@@ -35,18 +35,18 @@ import { CarritoBtnComponent } from './carrito-btn/carrito-btn.component';
     FiltroProductosComponent,
     ListadoProductosComponent,
     ProductosOfertasComponent,
-    RedesContactoComponent,
     LoginSesionComponent,
     NavProductosComponent,
     ProductoPreviewComponent,
     ProductoParticularComponent,
     InputCantidadProductoComponent,
-    CarritoBtnComponent
+    CarritoBtnComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
