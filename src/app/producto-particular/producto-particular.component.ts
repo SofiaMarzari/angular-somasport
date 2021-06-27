@@ -11,8 +11,8 @@ import { Producto } from './Producto';
 })
 export class ProductoParticularComponent implements OnInit {
 
-  productoParticular : Producto;
-  productos: Producto [] = [];
+  productos : Producto[];
+  producto : Producto;
 
   constructor(
     private route: ActivatedRoute,
@@ -22,14 +22,19 @@ export class ProductoParticularComponent implements OnInit {
 
   ngOnInit(): void {
     const idParam = Number(this.route.snapshot.paramMap.get('ID'));
-    this.productoParticular = this.productos[idParam-1];
-    this.seviceApi.getAll().subscribe(productos => this.productos = productos);
+    this.seviceApi.getAll().subscribe(
+          p => {
+            for(let i = 0; i < p.length; i++){
+              if(p[i].id == idParam){
+                this.producto = p[i];  
+              }
+            }
+          }
+    );
   }
 
-  comprarProducto(producto : Producto) : void{
-
+ comprarProducto(producto : Producto) : void{
     if(producto.cantidad > 0){
-        //invoco funcion del service 
         this.servCompras.agregarProducto(producto);
         console.log(this.servCompras._lista);
     }

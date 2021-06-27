@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductoParticularComponent } from '../producto-particular/producto-particular.component';
+import { ServiceApiService } from '../service-api.service';
+import { Producto } from './Producto';
 
 @Component({
   selector: 'app-list-lomaselegido',
@@ -6,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-lomaselegido.component.css']
 })
 export class ListLomaselegidoComponent implements OnInit {
-  name = "Lo mas elegido";
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor(private seviceApi : ServiceApiService) {
+    
+    
   }
 
+ 
+  ngOnInit(): void {
+  }
+//console.log(p["descripcion"])
 }
