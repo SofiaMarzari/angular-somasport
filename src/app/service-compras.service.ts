@@ -25,7 +25,9 @@ export class ServiceComprasService {
     }
      
   }
-
   
+  vaciarListaProductos(){
+    this.lista.splice(0);
+  }
 
 }

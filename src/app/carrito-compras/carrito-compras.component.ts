@@ -37,7 +37,12 @@ export class CarritoComprasComponent implements OnInit {
       delete element.cantidad;
       console.log(element);
       this.servApi.put(element, idProd).subscribe(productos => this.listaCarrito = productos);
+      this.vaciarCarrito();
     });
+  }
+
+  vaciarCarrito(){
+    this.servCompras.vaciarListaProductos();
   }
 
 }
