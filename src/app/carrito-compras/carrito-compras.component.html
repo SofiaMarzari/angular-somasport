@@ -1,8 +1,11 @@
-<table class="table table-hover">
+<h1 *ngIf="vacioSi">Carrito vacío!</h1>
+<table *ngIf="vacioNo" class="table table-hover">
     <thead>
         <tr>
             <th>Descripcion</th>
             <th>Cantidad</th>
+            <th></th>
+            <th>Quitar/Agregar</th>
         </tr>
     </thead>
     <tbody>
@@ -10,6 +13,17 @@
             <td>{{producto.descripcion}}</td>
             <td>{{producto.cantidad}}</td> 
             <td><img class="imgProductoTd" src="{{producto.image}}" alt="producto"></td>
+            <td><app-input-cantidad-producto [maximo]="producto.stock" [(cantidad)]="producto.cantidad"></app-input-cantidad-producto> </td>
         </tr>
     </tbody> 
 </table>
+<section *ngIf="vacioNo">
+    <form action="datosCompra" method="post">
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="text" name="apellido" placeholder="Apellido">
+        <input type="text" name="direcciondeenvio" placeholder="Direccion de envio">
+        <button (click)="finalizarCompra()">Finalizar Compra</button>
+    </form>
+</section>
+
+

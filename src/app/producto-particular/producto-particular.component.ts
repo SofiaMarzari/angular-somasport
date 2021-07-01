@@ -30,6 +30,7 @@ export class ProductoParticularComponent implements OnInit {
               }
             }
           }
+          
     );
   }
 

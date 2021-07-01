@@ -1,4 +1,4 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
@@ -19,15 +19,20 @@ export class ServiceApiService {
     )
   }
 
- 
-  /*
-    esto funciona bien, me devuelve solo el del id correspondiente
-    funciona mal el componente que al suscribirse me lo guarda como un array asociativo, parte por parte del objeto,
-    en vez de guardarme en una posicion del array el objeto completo,
-    el template lo lee de forma de objeto ¿¿¿??? pero me da error en la consola. ¿¿¿???
-  */ 
+  public put(producto :Producto, id : number): Observable<Producto[]>{
+    let opciones ={
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json'
+      })
+    
+    }
+    return this.http.put<Producto[]>(url+'/'+id, producto, opciones);
+  }
+
   /*public get(id : number): Observable<Producto[]>{
       return this.http.get<Producto[]>(url+'/'+id);
     }
   */
+
+  
 }
